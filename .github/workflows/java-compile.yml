@@ -33,10 +33,9 @@ jobs:
     # 2. COMPILACIÓN (Paso previo necesario)
     - name: Compilar el proyecto
       run: |
-        mkdir -out
+        mkdir -p out  # El flag -p evita errores si la carpeta ya existe
         find src -name "*.java" > sources.txt
         javac -d out @sources.txt
-
     # 3. GENERACIÓN DE JAVADOC
     - name: Generar Javadoc
       run: |

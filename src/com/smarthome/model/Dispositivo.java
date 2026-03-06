@@ -13,6 +13,8 @@ import com.smarthome.services.SmartHomeUtils;
  * - El método protected exigirConectado() lanza la excepción con el mensaje exacto del enunciado.
  */
 public abstract class Dispositivo implements Conectable, Encendible {
+	
+	private String reventarCodigo = "no creo que funcione si lo toco yo";
 
     /** Inmutable: identificador único del dispositivo. */
     private final String id;

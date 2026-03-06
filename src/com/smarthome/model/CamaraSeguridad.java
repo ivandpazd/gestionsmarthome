@@ -9,11 +9,9 @@ import com.smarthome.services.SmartHomeUtils;
  * - Sensibilidad determina si se detecta movimiento.
  */
 public class CamaraSeguridad extends Dispositivo {
-
-    public static final int SENSIBILIDAD_MINIMA = 1;
+ public static final int SENSIBILIDAD_MINIMA = 1;
     public static final int SENSIBILIDAD_MAXIMA = 10;
     public static final int UMBRAL_MOVIMIENTO = 7;
-
     private int sensibilidad;
 
     public CamaraSeguridad(String id, String nombre, int sensibilidad) {
@@ -39,5 +37,14 @@ public class CamaraSeguridad extends Dispositivo {
      */
     public boolean detectarMovimiento() {
         return this.estaConectado() && this.isEncendido() && sensibilidad >= UMBRAL_MOVIMIENTO;
+    }
+
+    /**
+     * Carol nuevoMetodo: aumenta la sensibilidad sin pasarse del máximo
+     */
+    public void aumentarSensibilidad() {
+        if (this.sensibilidad < SENSIBILIDAD_MAXIMA) {
+            this.sensibilidad++;
+        }
     }
 }

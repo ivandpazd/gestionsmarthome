@@ -29,6 +29,9 @@ public class App {
         BombillaInteligente bombilla1 = new BombillaInteligente(ID_BOMB_1, "bombilla1");
         BombillaInteligente bombilla2 = new BombillaInteligente(ID_BOMB_2, "bombilla2");
         CamaraSeguridad camara1 = new CamaraSeguridad(ID_CAM_1, "Camara1", CamaraSeguridad.SENSIBILIDAD_MINIMA);
+        //Nueva Camara
+        CamaraSeguridad camara2 = new CamaraSeguridad(ID_CAM_2, "Camara2", CamaraSeguridad.SENSIBILIDAD_MINIMA);
+
 
         service.registrarDispositivo(bombilla1);
         service.registrarDispositivo(bombilla2);

@@ -8,6 +8,8 @@ package com.smarthome.model;
  */
 public class BombillaInteligente extends Dispositivo implements Graduable {
 
+	//Comentario Daniel Navarro Pulido :)
+	
     /** Brillo máximo exigido por el enunciado. */
     public static final int BRILLO_MAXIMO = 100;
 

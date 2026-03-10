@@ -16,7 +16,7 @@ import com.smarthome.services.SmartHomeService;
  * 4) Revisión de cámaras: imprime "Movimiento detectado..." cuando procede.
  */
 public class App {
-
+// Comentario añadido por DanielS para prueba
     private static final String ID_BOMB_1 = "id-bomb1";
     private static final String ID_BOMB_2 = "id-bomb2";
     private static final String ID_CAM_1 = "id-camera1";

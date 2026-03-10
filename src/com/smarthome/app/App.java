@@ -69,5 +69,7 @@ public class App {
         for (Dispositivo d : service.getDispositivos()) {
             System.out.println(d);
         }
+        
+        // Esto es una prueba ....
     }
 }
